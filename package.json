@@ -1,0 +1,30 @@
+{
+  "name": "lit-css-test",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "An example repo of using lit with tailwind",
+  "main": "lib/main.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "clean": "rimraf --glob \"./*.css\" bundle.js",
+    "build:ts": "tsc",
+    "build:js": "esbuild --format=esm --bundle --loader:.css=copy --outfile=bundle.js src/main.ts",
+    "build:css": "postcss -r \"./*.css\"",
+    "build": "npm run clean && npm run build:js && npm run build:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Garbutt (https://github.com/43081j)",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.8.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.4",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2"
+  }
+}
