@@ -16,12 +16,12 @@
   "author": "James Garbutt (https://github.com/43081j)",
   "license": "MIT",
   "dependencies": {
-    "lit": "^2.8.0"
+    "lit": "^3.1.0"
   },
   "devDependencies": {
     "esbuild": "^0.19.4",
     "postcss": "^8.4.31",
-    "postcss-cli": "^10.1.0",
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.3",
